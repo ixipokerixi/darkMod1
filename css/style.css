@@ -1,0 +1,274 @@
+#main{
+   z-index: 4;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+#main2{
+    z-index: 3;
+ }
+#night{
+    background-image: linear-gradient(to right,#22467a,#00123a);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+}
+#day{
+    background-image: linear-gradient(180deg,#4286b5,#a6cae1);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+}
+body{
+    overflow: hidden;
+}
+#ff{
+    position: absolute;
+    z-index: 2;
+    width: 3572px;
+    height: 2682px;
+    translate: 0px -100% ;
+    opacity: 0.5;
+}
+#hh{
+    position: absolute;
+    z-index: 2;
+    width: 5814px;
+    height: 1080px;
+    margin: 0px;
+}
+img{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+img[src="pic/1.png"]{
+    position: absolute;
+    z-index: 5;
+}
+img[src="pic/Untitled copy.png"]{
+    z-index: 3;
+    position: absolute;
+    opacity: 0;  
+}
+*{
+    box-sizing: border-box;
+    transition:0.5s ease-in;
+    margin: 0px;
+}
+#kk{
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+}
+
+label{
+
+    border: solid 5px;
+    border-radius: 50px;
+    width: 250px;
+    height: 100px;
+    display: inline-block;
+    z-index: 2;
+    margin: 20px;
+    position: relative;
+    transition-duration: 0.5s;
+}
+#ll{
+    border-radius: 50px;
+    width: 250px;
+    height: 100px;
+    display: inline-block;
+    background-image: linear-gradient(-45deg,#EBBD07,#EB8807);
+    z-index: 2;
+    position: absolute;
+    margin: 20px;
+}
+#dd{
+    border-radius: 50px;
+    width: 250px;
+    height: 100px;
+    display: inline-block;
+    background-image: linear-gradient(45deg,#375175,#00123a);
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    margin: 20px;
+}
+#rr{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: -225px;
+    left: -225px;
+    z-index:2;
+}
+input:checked~div #ff{
+    translate: 0px;
+}
+input:checked~div #rr{
+    rotate: 180deg;
+}
+input{
+    display: none;
+}
+
+input:checked~#kk #night{
+    opacity: 1;
+}
+input:checked~#kk #day{
+    opacity: 0;
+}
+input:checked~div #ll{
+    opacity: 0;
+}
+
+input:checked~div #dd{
+    opacity: 1;
+}
+input:checked~div label{
+border-color: white;
+}
+input:checked~div label img[src="pic/Untitled copy.png"]{
+    opacity: 1;
+    rotate: 720deg;
+    translate: 190% 0px;
+    
+
+}
+input:checked~div label img[src="pic/1.png"]{
+    rotate: 500deg;
+    opacity: 0;
+    translate: 190% 0px;
+
+}
+input:checked~div label #one{
+    border-color: white;
+}
+input:checked~div label #to{
+    background-color: white;
+}
+input:checked~div label #tree{
+    width: 25px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    top: 28px;
+    left: 311px;
+    rotate: 0deg;
+}
+input:checked~div label #for{
+    width: 25px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    top: 46px;
+    left: 311px;
+    rotate: 0deg;
+}
+input:checked~div label #five{
+    background-color: white;
+    left: 350px;
+    opacity: 1;
+}
+input:checked~div label #six{
+    background-color: white;
+    left: 332px;
+    opacity: 1;
+}
+input:checked~div label #seven{
+    background-color: white;
+    left: 350px;
+    opacity: 1;
+}
+
+
+
+
+
+#one{
+    border: solid 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 270px;
+}
+
+#to{
+    width: 40px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    top: 45px;
+    left: 292px;
+    rotate: 90deg;
+}
+#tree{
+    width: 45px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    top: 45px;
+    left: 300px;
+    rotate: 60deg;
+}
+
+
+#for{
+    width: 40px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    top: 45px;
+    left: 314px;
+    rotate: 90deg;
+}
+
+#five{
+    width: 25px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    top: 28px;
+    left: 311px;
+    opacity: 0;
+
+}
+#six{
+    width: 40px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    top: 45px;
+    left: 292px;
+    rotate: 90deg;
+    opacity: 0;
+
+}
+#seven{
+    width: 25px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    top: 46px;
+    left: 311px;
+    opacity: 0;
+}
+
+
+
